@@ -45,8 +45,10 @@ p {
 
 .box-2 {
   position: initial;
-  width: 50px;
+  width: 550px;
   height: 400px;
+  top: 270px;
+  left: 150px;
   background: rgb(255, 247, 7);
 }
 

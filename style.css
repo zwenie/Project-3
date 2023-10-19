@@ -1,9 +1,13 @@
-* {
-	box-sizing: border-box;
+body {
+  background-color:rgb(247, 255, 0);
+  background-image: radial-gradient(white 15%, transparent 20%),
+  radial-gradient(white 15%, transparent 20%);
+  background-size: 60px 60px;
+  background-position: 0 0, 30px 30px;
 }
 
-body {
-	background: #ffffff;
+* {
+	box-sizing: border-box;
 }
 
 .canvas {
@@ -18,13 +22,12 @@ body {
 }
 
 p {
-  font-family: "Cardo", serif;
   font-size: 18px;
-  line-height: 30px;
-  background-color: rgb(255, 5, 213);
+  line-height: 25px;
+  background-color: rgb(238, 54, 255);
 }
 
-.block {
+.block-1 {
   background: rgb(255, 247, 7);
   padding: 30px;
 }
@@ -42,14 +45,14 @@ p {
 
 .box-2 {
   position: initial;
-  width: 600px;
+  width: 50px;
   height: 400px;
   background: rgb(255, 247, 7);
 }
 
 .box-3 {
   position: fixed;
-  width: 600px;
+  width: 550px;
   height: 400px;
   top: 300px;
   left: 500px;

@@ -595,6 +595,7 @@ html {
     }
     .div186 { grid-area: 19 / 9 / 20 / 10; 
         font-family: Lexend;
+        color:red;
         font-size: 2.3vw;
         line-height: 25px;
     }

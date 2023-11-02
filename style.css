@@ -232,7 +232,7 @@ html {
     background: rgb(255, 5, 213);
     color: rgb(2, 255, 27);
     border-width: 0px;
-    font-size: 3.2vw;
+    font-size: 2.9vw;
     line-height: 25px;
   }
 
@@ -314,6 +314,10 @@ html {
     background: rgb(2, 255, 27);
   }
   .div96 { grid-area: 17 / 14 / 18 / 15; 
+    font-family: Lexend;
+    border-width: 0px;
+    font-size: 2vw;
+    line-height: 25px;
     background: rgb(2, 255, 27);
   }
   .div97 { grid-area: 16 / 14 / 17 / 15; 

@@ -1,0 +1,853 @@
+html {
+    background-color:rgb(46, 234, 174);
+    background-image: url(ziploc.png);
+    background-size: 37px 37px;
+    background-position: 0 0, 30px 30px;
+  }
+
+  .parent {
+    display: grid;
+    grid-template-columns: repeat(15, 1fr);
+    grid-template-rows: repeat(25, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    width:auto;
+    height:85vh;
+    background: rgb(243, 255, 248);
+    padding: 0.5rem;
+    }
+    
+    .div1 { grid-area: 5 / 1 / 6 / 2; 
+        background: rgb(0, 255, 255);
+    }
+    .div2 { grid-area: 4 / 2 / 5 / 3; 
+        background: rgb(0, 255, 255);
+    }
+    .div3 { grid-area: 3 / 3 / 4 / 4; 
+        background: rgb(0, 255, 255);
+    }
+    .div4 { grid-area: 10 / 1 / 11 / 2; 
+        background: rgb(0, 255, 255);
+    }
+    .div5 { grid-area: 9 / 2 / 10 / 3; 
+        background: rgb(0, 255, 255);
+    }
+    .div6 { grid-area: 8 / 3 / 9 / 4; 
+        background: rgb(0, 255, 255);
+    }
+    .div7 { grid-area: 6 / 2 / 7 / 3; 
+        background: rgb(46, 234, 174);
+        font-family: Lexend;
+        color:red;
+        font-size: 2vw;
+        line-height: 25px;
+        display: flex;
+        align-items: flex-end;
+        justify-content: flex-end;
+        backface-visibility: visible !important;
+        animation: flip 1.5s ease infinite;
+    }
+    @keyframes flip {
+        0% {
+            transform: perspective(400px) rotateY(0);
+            animation-timing-function: ease-out;
+        }
+        40% {
+            transform: perspective(400px) translateZ(150px) rotateY(170deg);
+            animation-timing-function: ease-out;
+        }
+        50% {
+            transform: perspective(400px) translateZ(150px) rotateY(190deg) scale(1);
+            animation-timing-function: ease-in;
+        }
+        80% {
+            transform: perspective(400px) rotateY(360deg) scale(.95);
+            animation-timing-function: ease-in;
+        }
+        100% {
+            transform: perspective(400px) scale(1);
+            animation-timing-function: ease-in;
+        }
+    }
+    .div8 { grid-area: 8 / 5 / 9 / 6; 
+        background: rgb(0, 255, 255);
+    }
+    .div9 { grid-area: 8 / 6 / 9 / 7; 
+        background: rgb(0, 255, 255);
+    }
+    .div10 { grid-area: 8 / 7 / 9 / 8; 
+        background: rgb(0, 255, 255);
+    }
+    .div11 { grid-area: 8 / 8 / 9 / 9; 
+        background: rgb(0, 255, 255);
+    }
+    .div12 { grid-area: 8 / 9 / 9 / 10; 
+        background: rgb(0, 255, 255);
+    }
+    .div13 { grid-area: 9 / 5 / 10 / 6; }
+    .div14 { grid-area: 10 / 5 / 11 / 6; }
+    .div15 { grid-area: 11 / 5 / 12 / 6; }
+    .div16 { grid-area: 12 / 5 / 13 / 6; }
+    .div17 { grid-area: 13 / 5 / 14 / 6; }
+    .div18 { grid-area: 14 / 5 / 15 / 6; }
+    .div19 { grid-area: 15 / 5 / 16 / 6; }
+    .div20 { grid-area: 16 / 5 / 17 / 6; 
+        background: rgb(2, 255, 27);
+    }
+    .div21 { grid-area: 17 / 5 / 18 / 6; }
+    .div22 { grid-area: 18 / 5 / 19 / 6; 
+        display: flex;
+        justify-content: center;
+        background: rgb(2, 255, 27);
+    }
+    .div23 { grid-area: 18 / 6 / 19 / 7; 
+        display: flex;
+        justify-content: center;}
+    .div24 { grid-area: 18 / 7 / 19 / 8; 
+        display: flex;
+        justify-content: center;}
+    .div25 { grid-area: 18 / 8 / 19 / 9; 
+        display: flex;
+        justify-content: center;}
+    .div26 { grid-area: 18 / 9 / 19 / 10; 
+        display: flex;
+        justify-content: center;}
+    .div27 { grid-area: 17 / 9 / 18 / 10; 
+        display: flex;
+        align-items: flex-end;
+        justify-content: flex-end;}
+    .div28 { grid-area: 16 / 9 / 17 / 10; 
+        display: flex;
+        align-items: flex-end;
+        justify-content: flex-end;}
+    .div29 { grid-area: 15 / 9 / 16 / 10; 
+        display: flex;
+        align-items: flex-end;
+        justify-content: flex-end;}
+    .div30 { grid-area: 14 / 9 / 15 / 10; 
+        display: flex;
+        align-items: flex-end;
+        justify-content: flex-end;}
+    .div31 { grid-area: 13 / 9 / 14 / 10; 
+        display: flex;
+        align-items: flex-end;
+        justify-content: flex-end;}
+    .div32 { grid-area: 12 / 9 / 13 / 10; 
+        display: flex;
+        align-items: flex-end;
+        justify-content: flex-end;}
+    .div33 { grid-area: 11 / 9 / 12 / 10; 
+        display: flex;
+        align-items: flex-end;
+        justify-content: flex-end;}
+    .div34 { grid-area: 10 / 9 / 11 / 10; 
+        display: flex;
+        align-items: flex-end;
+        justify-content: flex-end;}
+    .div35 { grid-area: 9 / 9 / 10 / 10; 
+        display: flex;
+        align-items: flex-end;
+        justify-content: flex-end;}
+    .div36 { grid-area: 17 / 6 / 18 / 7; 
+        background: rgb(2, 255, 27);
+    }
+    .div37 { grid-area: 17 / 7 / 18 / 8; 
+        background: rgb(255, 5, 213);
+    }
+    .div38 { grid-area: 17 / 8 / 18 / 9; 
+        background: rgb(255, 5, 213);
+    }
+    .div39 { grid-area: 16 / 6 / 17 / 7; 
+        background: rgb(255, 5, 213);
+    }
+    .div40 { grid-area: 16 / 7 / 17 / 8; 
+        background: rgb(2, 255, 27);
+    }
+    .div41 { grid-area: 16 / 8 / 17 / 9; 
+        background: rgb(255, 5, 213);
+    }
+    .div42 { grid-area: 15 / 6 / 16 / 7; 
+        background: rgb(2, 255, 27);
+    }
+    .div43 { grid-area: 15 / 7 / 16 / 8; 
+        background: rgb(255, 5, 213);
+    }
+    .div44 { grid-area: 15 / 8 / 16 / 9; 
+        background: rgb(2, 255, 27);
+    }
+    .div45 { grid-area: 14 / 6 / 15 / 7; 
+        background: rgb(255, 5, 213);
+    }
+    .div46 { grid-area: 14 / 7 / 15 / 8; 
+        background: rgb(2, 255, 27);
+    }
+    .div47 { grid-area: 14 / 8 / 15 / 9; 
+        background: rgb(255, 5, 213);
+    }
+    .div48 { grid-area: 13 / 6 / 14 / 7; 
+        background: rgb(255, 5, 213);
+    }
+    .div49 { grid-area: 12 / 7 / 13 / 8; 
+        background: rgb(0, 0, 0);
+    }
+    .div50 { grid-area: 13 / 8 / 14 / 9;
+        background: rgb(255, 5, 213);
+    } 
+    .div51 { grid-area: 13 / 7 / 14 / 8; 
+        background: rgb(255, 5, 213);
+    }
+    .div52 { grid-area: 1 / 10 / 2 / 11; 
+        background: rgb(255, 5, 213);
+    }
+    .div53 { grid-area: 1 / 11 / 2 / 12; 
+        background: rgb(255, 5, 213);
+    }
+    .div54 { grid-area: 1 / 12 / 2 / 13; 
+        background: rgb(255, 5, 213);
+    }
+    .div55 { grid-area: 1 / 13 / 2 / 14; 
+        background: rgb(255, 5, 213);
+    }
+    .div56 { grid-area: 1 / 14 / 2 / 15; 
+        background: rgb(255, 5, 213);
+    }
+    .div57 { grid-area: 1 / 15 / 2 / 16; 
+        background: rgb(255, 5, 213);
+    }
+    .div58 { grid-area: 2 / 10 / 3 / 11; 
+        background: rgb(0, 255, 255);
+    }
+    .div59 { grid-area: 3 / 10 / 4 / 11; 
+        background: rgb(0, 255, 255);
+    }
+    .div60 { grid-area: 4 / 10 / 5 / 11; 
+        background: rgb(0, 255, 255);
+    }
+    .div61 { grid-area: 5 / 10 / 6 / 11; 
+        background: rgb(0, 255, 255);
+    }
+    .div62 { grid-area: 6 / 10 / 7 / 11; 
+        background: rgb(0, 255, 255);
+    }
+    .div63 { grid-area: 7 / 10 / 8 / 11; 
+        background: rgb(0, 255, 255);
+    }
+    .div64 { grid-area: 8 / 10 / 9 / 11; 
+        background: rgb(0, 255, 255);
+    }
+    .div65 { grid-area: 9 / 10 / 10 / 11; 
+        background: rgb(0, 255, 255);
+    }
+    .div66 { grid-area: 10 / 10 / 11 / 11; 
+        background: rgb(0, 255, 255);
+    }
+    .div67 { grid-area: 11 / 10 / 12 / 11; 
+        background: rgb(0, 255, 255);
+    }
+    .div68 { grid-area: 12 / 10 / 13 / 11; 
+        background: rgb(0, 255, 255);
+    }
+    .div69 { grid-area: 13 / 10 / 14 / 11; 
+        background: rgb(0, 255, 255);
+    }
+    .div70 { grid-area: 14 / 10 / 15 / 11; 
+        background: rgb(0, 255, 255);
+    }
+    .div71 { grid-area: 14 / 11 / 15 / 12; 
+        background: rgb(0, 255, 255);
+    }
+    .div72 { grid-area: 14 / 12 / 15 / 13; 
+        background: rgb(247, 255, 0)
+    }
+    .div73 { grid-area: 14 / 13 / 15 / 14; 
+        background: rgb(247, 255, 0)
+    }
+    .div74 { grid-area: 14 / 14 / 15 / 15; 
+        background: rgb(247, 255, 0)
+    }
+    .div75 { grid-area: 14 / 15 / 15 / 16; 
+        background: rgb(247, 255, 0)
+    }
+    .div76 { grid-area: 10 / 12 / 11 / 13; 
+        background: rgb(0, 0, 0)
+    }
+    .div77 { grid-area: 11 / 12 / 12 / 13; 
+        background: rgb(0, 0, 0)
+    }
+    .div78 { grid-area: 12 / 12 / 13 / 13; 
+        background: rgb(0, 0, 0)
+    }
+    .div79 { grid-area: 13 / 12 / 14 / 13; 
+        background: rgb(0, 0, 0)
+    }
+    .div80 { grid-area: 12 / 13 / 13 / 14; 
+        background: rgb(0, 0, 0)
+    }
+    .div81 { grid-area: 12 / 14 / 13 / 15; 
+        background: rgb(0, 0, 0)
+    }
+    .div82 { grid-area: 12 / 15 / 13 / 16; 
+        background: rgb(0, 0, 0)
+    }
+    .div83 { grid-area: 13 / 15 / 14 / 16; 
+        background: rgb(0, 0, 0)
+    }
+    .div84 { grid-area: 13 / 13 / 14 / 14; 
+        background: rgb(0, 0, 0)
+    }
+    .div85 { grid-area: 13 / 14 / 14 / 15;         background: rgb(0, 0, 0)
+    }
+    .div86 { grid-area: 9 / 11 / 10 / 12; 
+        background: rgb(0, 255, 255);
+    }
+    .div87 { grid-area: 9 / 12 / 10 / 13; 
+        background: rgb(0, 255, 255);
+    }
+    .div88 { grid-area: 9 / 13 / 10 / 14; 
+        background: rgb(0, 255, 255);
+    }
+    .div89 { grid-area: 9 / 14 / 10 / 15; 
+        background: rgb(0, 255, 255);
+    }
+    .div90 { grid-area: 9 / 15 / 10 / 16; 
+        background: rgb(0, 255, 255);
+    }
+    .div91 { grid-area: 2 / 12 / 3 / 13; 
+        background: rgb(0, 255, 255);
+    }
+    .div92 { grid-area: 2 / 13 / 3 / 14; 
+        background: rgb(0, 255, 255);
+    }
+    .div93 { grid-area: 2 / 14 / 3 / 15; 
+        background: rgb(0, 255, 255);
+    }
+    .div94 { grid-area: 2 / 15 / 3 / 16; 
+        background: rgb(0, 255, 255);
+    }
+    .div95 { grid-area: 3 / 12 / 4 / 13; }
+    .div96 { grid-area: 3 / 13 / 4 / 14; }
+    .div97 { grid-area: 3 / 14 / 4 / 15; }
+    .div98 { grid-area: 3 / 15 / 4 / 16; 
+        display: flex;
+        align-items: flex-end;
+        justify-content: flex-end;}
+    .div99 { grid-area: 4 / 12 / 5 / 13; }
+    .div100 { grid-area: 5 / 12 / 6 / 13; 
+        background: rgb(2, 255, 27);
+    }
+    .div101 { grid-area: 6 / 12 / 7 / 13; 
+        background: rgb(2, 255, 27);
+    }
+    .div102 { grid-area: 7 / 12 / 8 / 13; 
+        display: flex;
+        justify-content: center;
+        background: rgb(2, 255, 27);
+    }
+    .div103 { grid-area: 7 / 13 / 8 / 14; 
+        display: flex;
+        justify-content: center;}
+    .div104 { grid-area: 7 / 14 / 8 / 15; 
+        display: flex;
+        justify-content: center;}
+    .div105 { grid-area: 7 / 15 / 8 / 16; 
+        display: flex;
+        justify-content: center;}
+    .div106 { grid-area: 4 / 15 / 5 / 16; 
+        display: flex;
+        align-items: flex-end;
+        justify-content: flex-end;
+    }
+    .div107 { grid-area: 5 / 15 / 6 / 16; 
+        display: flex;
+        align-items: flex-end;
+        justify-content: flex-end;
+        background: rgb(255, 5, 213);
+    }
+    .div108 { grid-area: 6 / 15 / 7 / 16; 
+        display: flex;
+        align-items: flex-end;
+        justify-content: flex-end;
+        background: rgb(255, 5, 213);
+    }
+    .div109 { grid-area: 1 / 1 / 2 / 2; 
+        background: rgb(255, 5, 213);
+    }
+    .div110 { grid-area: 1 / 2 / 2 / 3; 
+        background: rgb(255, 5, 213);
+    }
+    .div111 { grid-area: 1 / 3 / 2 / 4; 
+        background: rgb(255, 5, 213);
+    }
+    .div112 { grid-area: 2 / 1 / 3 / 2; 
+        background: rgb(255, 5, 213);
+    }
+    .div113 { grid-area: 2 / 2 / 3 / 3; 
+        background: rgb(255, 5, 213);
+    }
+    .div114 { grid-area: 2 / 3 / 3 / 4; 
+        background: rgb(255, 5, 213);
+    }
+    .div115 { grid-area: 3 / 1 / 4 / 2; 
+        background: rgb(255, 5, 213);
+    }
+    .div116 { grid-area: 3 / 2 / 4 / 3; 
+        background: rgb(255, 5, 213);
+    }
+    .div117 { grid-area: 4 / 1 / 5 / 2; 
+        background: rgb(255, 5, 213);
+    }
+    .div118 { grid-area: 10 / 2 / 11 / 3; 
+        background: rgb(255, 5, 213);
+    }
+    .div119 { grid-area: 9 / 3 / 10 / 4; 
+        background: rgb(255, 5, 213);
+    }
+    .div120 { grid-area: 10 / 3 / 11 / 4; 
+        background: rgb(255, 5, 213);
+    }
+    .div121 { grid-area: 11 / 1 / 12 / 2; 
+        background: rgb(255, 5, 213);
+    }
+    .div122 { grid-area: 11 / 2 / 12 / 3; 
+        background: rgb(255, 5, 213);
+    }
+    .div123 { grid-area: 11 / 3 / 12 / 4; 
+        background: rgb(255, 5, 213);
+    }
+    .div124 { grid-area: 12 / 1 / 13 / 2; 
+        background: rgb(255, 5, 213);
+    }
+    .div125 { grid-area: 12 / 2 / 13 / 3; 
+        background: rgb(255, 5, 213);
+    }
+    .div126 { grid-area: 12 / 3 / 13 / 4; 
+        background: rgb(255, 5, 213);
+    }
+    .div127 { grid-area: 6 / 6 / 7 / 7; 
+        background: rgb(46, 234, 174);
+        font-family: Lexend;
+        color:red;
+        font-size: 2vw;
+        line-height: 25px;
+        display: flex;
+        align-items: flex-end;
+        justify-content: flex-end;
+        animation: bounce 2s ease infinite;
+    }
+
+    @keyframes bounce {
+              0%, 20%, 50%, 80%, 100% {transform: translateY(0);}
+              40% {transform: translateY(-30px);}
+              60% {transform: translateY(-15px);}
+    }
+
+
+    .div128 { grid-area: 15 / 12 / 16 / 13; 
+        background: rgb(247, 255, 0)
+    }
+    .div129 { grid-area: 15 / 13 / 16 / 14; 
+        background: rgb(247, 255, 0)
+    }
+    .div130 { grid-area: 15 / 14 / 16 / 15; 
+        background: rgb(247, 255, 0)
+    }
+    .div131 { grid-area: 15 / 15 / 16 / 16; 
+        background: rgb(247, 255, 0)
+    }
+    .div132 { grid-area: 16 / 12 / 17 / 13; 
+        background: rgb(247, 255, 0)
+    }
+    .div133 { grid-area: 16 / 13 / 17 / 14; 
+        background: rgb(247, 255, 0)
+    }
+    .div134 { grid-area: 16 / 14 / 17 / 15; 
+        background: rgb(247, 255, 0)
+    }
+    .div135 { grid-area: 16 / 15 / 17 / 16; 
+        background: rgb(247, 255, 0)
+    }
+    .div136 { grid-area: 17 / 12 / 18 / 13; 
+        background: rgb(247, 255, 0)
+    }
+    .div137 { grid-area: 17 / 13 / 18 / 14; 
+        background: rgb(247, 255, 0)
+    }
+    .div138 { grid-area: 17 / 14 / 18 / 15; 
+        background: rgb(247, 255, 0)
+    }
+    .div139 { grid-area: 17 / 15 / 18 / 16; 
+        background: rgb(247, 255, 0)
+    }
+    .div140 { grid-area: 20 / 13 / 21 / 14; 
+        background: rgb(46, 234, 174);
+        font-family: Lexend;
+        color:red;
+        font-size: 2vw;
+        line-height: 25px;
+        display: flex;
+        align-items: flex-end;
+        justify-content: flex-end;
+        animation: shake 2s ease infinite;
+    }
+      @keyframes shake {
+          0%, 100% {transform: translateX(0);}
+          10%, 30%, 50%, 70%, 90% {transform: translateX(-10px);}
+          20%, 40%, 60%, 80% {transform: translateX(10px);}
+    }
+
+    .div141 { grid-area: 6 / 13 / 7 / 14; 
+        background: rgb(255, 5, 213);
+    }
+    .div142 { grid-area: 6 / 14 / 7 / 15; 
+        background: rgb(255, 5, 213);
+    }
+    .div143 { grid-area: 5 / 13 / 6 / 14; 
+        background: rgb(255, 5, 213);
+    }
+    .div144 { grid-area: 5 / 14 / 6 / 15; 
+        background: rgb(255, 5, 213);
+    }
+    .div145 { grid-area: 4 / 14 / 5 / 15; 
+        background: rgb(0, 0, 0);
+    }
+    .div146 { grid-area: 10 / 11 / 11 / 12; 
+        background: rgb(255, 5, 213);
+    }
+    .div147 { grid-area: 11 / 11 / 12 / 12; 
+        background: rgb(255, 5, 213);
+    }
+    .div148 { grid-area: 12 / 11 / 13 / 12; 
+        background: rgb(255, 5, 213);
+    }
+    .div149 { grid-area: 13 / 11 / 14 / 12; 
+        background: rgb(255, 5, 213);
+    }
+    .div150 { grid-area: 10 / 13 / 11 / 14; 
+        background: rgb(255, 5, 213);
+    }
+    .div151 { grid-area: 10 / 14 / 11 / 15; 
+        background: rgb(255, 5, 213);
+    }
+    .div152 { grid-area: 10 / 15 / 11 / 16; 
+        background: rgb(255, 5, 213);
+    }
+    .div153 { grid-area: 11 / 13 / 12 / 14; 
+        background: rgb(255, 5, 213);
+    }
+    .div154 { grid-area: 11 / 14 / 12 / 15; 
+        background: rgb(255, 5, 213);
+    }
+    .div155 { grid-area: 11 / 15 / 12 / 16; 
+        background: rgb(255, 5, 213);
+    }
+    .div156 { grid-area: 2 / 5 / 3 / 6; 
+        background: rgb(2, 255, 27);
+    }
+    .div157 { grid-area: 3 / 6 / 4 / 7; 
+        background: rgb(2, 255, 27);
+    }
+    .div158 { grid-area: 4 / 7 / 5 / 8; 
+        background: rgb(2, 255, 27);
+    }
+    .div159 { grid-area: 5 / 8 / 6 / 9; 
+        background: rgb(2, 255, 27);
+    }
+    .div160 { grid-area: 6 / 9 / 7 / 10; 
+        background: rgb(2, 255, 27);
+    }
+    .div161 { grid-area: 2 / 7 / 3 / 8; 
+        background: rgb(2, 255, 27);
+    }
+    .div162 { grid-area: 3 / 8 / 4 / 9; 
+        background: rgb(2, 255, 27);
+    }
+    .div163 { grid-area: 4 / 9 / 5 / 10; 
+        background: rgb(2, 255, 27);
+    }
+    .div164 { grid-area: 25 / 1 / 26 / 2; 
+        background: rgb(0, 255, 255);
+    }
+    .div165 { grid-area: 25 / 2 / 26 / 3; 
+        background: rgb(0, 255, 255);
+    }
+    .div166 { grid-area: 25 / 3 / 26 / 4; 
+        background: rgb(0, 255, 255);
+    }
+    .div167 { grid-area: 25 / 4 / 26 / 5; 
+        background: rgb(0, 255, 255);
+    }
+    .div168 { grid-area: 25 / 5 / 26 / 6; 
+        background: rgb(0, 255, 255);
+    }
+    .div169 { grid-area: 25 / 6 / 26 / 7; 
+        background: rgb(0, 255, 255);
+    }
+    .div170 { grid-area: 25 / 7 / 26 / 8; 
+        background: rgb(0, 255, 255);
+    }
+    .div171 { grid-area: 25 / 8 / 26 / 9; 
+        background: rgb(0, 255, 255);
+    }
+    .div172 { grid-area: 25 / 9 / 26 / 10; 
+        background: rgb(0, 255, 255);
+    }
+    .div173 { grid-area: 25 / 10 / 26 / 11; 
+        background: rgb(0, 255, 255);
+    }
+    .div174 { grid-area: 25 / 11 / 26 / 12; 
+        background: rgb(0, 255, 255);
+    }
+    .div175 { grid-area: 25 / 12 / 26 / 13; 
+        background: rgb(0, 255, 255);
+    }
+    .div176 { grid-area: 25 / 13 / 26 / 14; 
+        background: rgb(0, 255, 255);
+    }
+    .div177 { grid-area: 25 / 14 / 26 / 15; 
+        background: rgb(0, 255, 255);
+    }
+    .div178 { grid-area: 25 / 15 / 26 / 16; 
+        background: rgb(0, 255, 255);
+    }
+    .div179 { grid-area: 24 / 1 / 25 / 2; 
+        background: rgb(0, 255, 255);
+    }
+    .div180 { grid-area: 24 / 2 / 25 / 3; 
+        background: rgb(0, 255, 255);
+    }
+    .div181 { grid-area: 24 / 3 / 25 / 4; 
+        background: rgb(0, 255, 255);
+    }
+    .div182 { grid-area: 24 / 4 / 25 / 5; 
+        background: rgb(0, 255, 255);
+    }
+    .div183 { grid-area: 24 / 5 / 25 / 6; 
+        background: rgb(0, 255, 255);
+    }
+    .div184 { grid-area: 24 / 6 / 25 / 7; 
+        background: rgb(0, 255, 255);
+    }
+    .div185 { grid-area: 24 / 7 / 25 / 8; 
+        background: rgb(0, 255, 255);
+    }
+    .div186 { grid-area: 24 / 8 / 25 / 9; 
+        background: rgb(0, 255, 255);
+    }
+    .div187 { grid-area: 24 / 9 / 25 / 10; 
+        background: rgb(0, 255, 255);
+    }
+    .div188 { grid-area: 24 / 10 / 25 / 11; 
+        background: rgb(0, 255, 255);
+    }
+    .div189 { grid-area: 24 / 11 / 25 / 12; 
+        background: rgb(0, 255, 255);
+    }
+    .div190 { grid-area: 24 / 12 / 25 / 13; 
+        background: rgb(0, 255, 255);
+    }
+    .div191 { grid-area: 24 / 13 / 25 / 14; 
+        background: rgb(0, 255, 255);
+    }
+    .div192 { grid-area: 24 / 14 / 25 / 15; 
+        background: rgb(0, 255, 255);
+    }
+    .div193 { grid-area: 24 / 15 / 25 / 16; 
+        background: rgb(0, 255, 255);
+    }
+    .div194 { grid-area: 23 / 1 / 24 / 2; 
+        background: rgb(255, 5, 213);
+    }
+    .div195 { grid-area: 23 / 2 / 24 / 3; 
+        background: rgb(255, 5, 213);
+    }
+    .div196 { grid-area: 23 / 3 / 24 / 4; 
+        background: rgb(255, 5, 213);
+    }
+    .div197 { grid-area: 23 / 4 / 24 / 5; 
+        background: rgb(255, 5, 213);
+    }
+    .div198 { grid-area: 23 / 5 / 24 / 6; 
+        background: rgb(255, 5, 213);
+    }
+    .div199 { grid-area: 23 / 6 / 24 / 7; 
+        background: rgb(255, 5, 213);
+    }
+    .div200 { grid-area: 23 / 7 / 24 / 8; 
+        background: rgb(255, 5, 213);
+    }
+    .div201 { grid-area: 23 / 8 / 24 / 9; 
+        background: rgb(255, 5, 213);
+    }
+    .div202 { grid-area: 23 / 9 / 24 / 10; 
+        background: rgb(255, 5, 213);
+    }
+    .div203 { grid-area: 23 / 10 / 24 / 11; 
+        background: rgb(255, 5, 213);
+    }
+    .div204 { grid-area: 23 / 11 / 24 / 12; 
+        background: rgb(255, 5, 213);
+    }
+    .div205 { grid-area: 23 / 12 / 24 / 13; 
+        background: rgb(255, 5, 213);
+    }
+    .div206 { grid-area: 23 / 13 / 24 / 14; 
+        background: rgb(255, 5, 213);
+    }
+    .div207 { grid-area: 23 / 14 / 24 / 15; 
+        background: rgb(255, 5, 213);
+    }
+    .div208 { grid-area: 23 / 15 / 24 / 16; 
+        background: rgb(255, 5, 213);
+    }
+    .div209 { grid-area: 13 / 3 / 14 / 4; 
+        background: rgb(2, 255, 27);
+    }
+    .div210 { grid-area: 14 / 3 / 15 / 4; 
+        background: rgb(2, 255, 27);
+    }
+    .div211 { grid-area: 15 / 3 / 16 / 4; 
+        background: rgb(2, 255, 27);
+    }
+    .div212 { grid-area: 16 / 3 / 17 / 4; 
+        background: rgb(2, 255, 27);
+    }
+    .div213 { grid-area: 17 / 3 / 18 / 4; 
+        background: rgb(2, 255, 27);
+    }
+    .div214 { grid-area: 18 / 3 / 19 / 4; 
+        background: rgb(2, 255, 27);
+    }
+    .div215 { grid-area: 19 / 3 / 20 / 4; 
+        background: rgb(2, 255, 27);
+    }
+    .div216 { grid-area: 20 / 3 / 21 / 4; 
+        background: rgb(2, 255, 27);
+    }
+    .div217 { grid-area: 13 / 2 / 14 / 3; 
+        font-family: Lexend;
+        color:rgb(2, 255, 27);
+        font-size: 1vw;
+        line-height: 15px;
+        animation: shake 2s ease infinite;
+   }
+    .div218 { grid-area: 14 / 2 / 15 / 3; 
+        font-family: Lexend;
+        color:rgb(2, 255, 27);
+        font-size: 1vw;
+        line-height: 15px;
+        animation: shake 2s ease infinite;
+   }
+    .div219 { grid-area: 15 / 2 / 16 / 3; 
+        font-family: Lexend;
+        color:rgb(2, 255, 27);
+        font-size: 1vw;
+        line-height: 15px;
+        animation: shake 2s ease infinite;
+   }
+    .div220 { grid-area: 16 / 2 / 17 / 3; 
+        font-family: Lexend;
+        color:rgb(2, 255, 27);
+        font-size: 1vw;
+        line-height: 15px;
+        animation: shake 2s ease infinite;
+   }
+    .div221 { grid-area: 17 / 2 / 18 / 3; 
+        font-family: Lexend;
+        color:rgb(2, 255, 27);
+        font-size: 1vw;
+        line-height: 15px;
+        animation: shake 2s ease infinite;
+   }
+    .div222 { grid-area: 18 / 2 / 19 / 3; 
+        font-family: Lexend;
+        color:rgb(2, 255, 27);
+        font-size: 1vw;
+        line-height: 15px;
+        animation: shake 2s ease infinite;
+   }
+    .div223 { grid-area: 19 / 2 / 20 / 3; 
+        font-family: Lexend;
+        color:rgb(2, 255, 27);
+        font-size: 1vw;
+        line-height: 15px;
+        animation: shake 2s ease infinite;
+   }
+    .div224 { grid-area: 20 / 2 / 21 / 3; 
+        font-family: Lexend;
+        color:rgb(2, 255, 27);
+        font-size: 1vw;
+        line-height: 15px;
+        animation: shake 2s ease infinite;
+   }
+   .div225 { grid-area: 22 / 15 / 23 / 16; 
+    font-family: Lexend;
+    color:rgb(2, 255, 27);
+    font-size: 1vw;
+    line-height: 15px;
+    animation: shake 2s ease infinite;
+}
+   .div226 { grid-area: 22 / 14 / 23 / 15; 
+    font-family: Lexend;
+    color:rgb(2, 255, 27);
+    font-size: 1vw;
+    line-height: 15px;
+    animation: shake 2s ease infinite;
+}
+   .div227 { grid-area: 22 / 13 / 23 / 14; 
+    font-family: Lexend;
+    color:rgb(2, 255, 27);
+    font-size: 1vw;
+    line-height: 15px;
+    animation: shake 2s ease infinite;
+}
+   .div228 { grid-area: 22 / 12 / 23 / 13; 
+    font-family: Lexend;
+    color:rgb(2, 255, 27);
+    font-size: 1vw;
+    line-height: 15px;
+    animation: shake 2s ease infinite;
+}
+   .div229 { grid-area: 22 / 11 / 23 / 12; 
+    font-family: Lexend;
+    color:rgb(2, 255, 27);
+    font-size: 1vw;
+    line-height: 15px;
+    animation: shake 2s ease infinite;
+}
+   .div230 { grid-area: 22 / 10 / 23 / 11; 
+    font-family: Lexend;
+    color:rgb(2, 255, 27);
+    font-size: 1vw;
+    line-height: 15px;
+    animation: shake 2s ease infinite;
+}
+   .div231 { grid-area: 22 / 9 / 23 / 10; 
+    font-family: Lexend;
+    color:rgb(2, 255, 27);
+    font-size: 1vw;
+    line-height: 15px;
+    animation: shake 2s ease infinite;
+}
+   .div232 { grid-area: 22 / 8 / 23 / 9; 
+    font-family: Lexend;
+    color:rgb(2, 255, 27);
+    font-size: 1vw;
+    line-height: 15px;
+    animation: shake 2s ease infinite;
+}
+   .div233 { grid-area: 22 / 7 / 23 / 8; 
+    font-family: Lexend;
+    color:rgb(2, 255, 27);
+    font-size: 1vw;
+    line-height: 15px;
+    animation: shake 2s ease infinite;
+}
+
+   .div234 { grid-area: 22 / 6 / 23 / 7; 
+    font-family: Lexend;
+    color:rgb(2, 255, 27);
+    font-size: 1vw;
+    line-height: 15px;
+    animation: shake 2s ease infinite;
+}
+    
